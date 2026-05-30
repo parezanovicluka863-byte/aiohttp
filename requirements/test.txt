@@ -10,6 +10,8 @@ aiohappyeyeballs==2.6.2
     # via
     #   -r requirements/runtime-deps.in
     #   aiohttp
+aiohttp==3.13.5
+    # via pytest-aiohttp
 aiosignal==1.4.0
     # via
     #   -r requirements/runtime-deps.in
@@ -38,7 +40,7 @@ cffi==2.0.0
     #   pycares
 click==8.4.1
     # via wait-for-it
-coverage==7.14.0
+coverage==7.14.1
     # via
     #   -r requirements/test-common.in
     #   pytest-cov
@@ -124,7 +126,7 @@ pytest==9.0.3
     #   pytest-timeout
     #   pytest-xdist
 pytest-aiohttp==1.1.0
-    # via -r requirements/test-common.in
+    # via -r requirements/test-common-base.in
 pytest-asyncio==1.4.0
     # via pytest-aiohttp
 pytest-codspeed==5.0.3
@@ -179,6 +181,3 @@ yarl==1.24.2
     #   aiohttp
 zlib-ng==1.0.0
     # via -r requirements/test-common.in
-
-# The following packages are considered to be unsafe in a requirements file:
-# aiohttp
